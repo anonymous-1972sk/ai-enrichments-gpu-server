@@ -1,0 +1,1976 @@
+{
+    "@context": "https://w3id.org/ro/crate/1.2/context",
+    "@graph": [
+        {
+            "@id": "./",
+            "@type": "Dataset",
+            "author": [
+                {
+                    "@id": "https://orcid.org/XXXX-XXXX-XXXX-XXXX"
+                }
+            ],
+            "conformsTo": {
+                "@id": "https://anonymous-4dc42.github.io/rise-ro-crate-profile/0.1.0/"
+            },
+            "contributor": [
+                {
+                    "@id": "https://credit.niso.org/contributor-roles/investigation/"
+                }
+            ],
+            "dateCreated": "2026-03-25T04:45:06.221504",
+            "dateModified": "2026-03-25T05:22:35.874575",
+            "datePublished": "2026-03-25T03:45:06+00:00",
+            "description": "This experiment enriches an existing RO-Crate artifact with generated titles, descriptions, and keywords using locally hosted LLMs through Ollama. Different models and prompt context budgets are combined to evaluate how model choice and available artifact context influence metadata quality. Each run produces an enriched RO-Crate artifact together with run manifests, including token and runtime statistics, GPU and energy measurements, and automated comparisons against a human-written reference using BERTScore metric.",
+            "hasPart": [
+                {
+                    "@id": "config/hactar/hardware.json"
+                },
+                {
+                    "@id": "config/allocation.json"
+                },
+                {
+                    "@id": "config/hactar/topology.pdf"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-47-49_883246_bootstrap.file"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-47-49_883246_bootstrap.stdout"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-47-49_883246_bootstrap.stderr"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-47-49_883246_bootstrap.status"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-45-08_312776_reset.command"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-45-08_312776_reset.stdout"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-45-08_312776_reset.stderr"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-45-08_312776_reset.status"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-47-54_465879_setup_enrich-metadata.file"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-47-54_465879_setup_enrich-metadata.stdout"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-47-54_465879_setup_enrich-metadata.stderr"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-47-54_465879_setup_enrich-metadata.status"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-09_493936_copy_ai-metadata-enricher.command"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-09_493936_copy_ai-metadata-enricher.stdout"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-09_493936_copy_ai-metadata-enricher.stderr"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-09_493936_copy_ai-metadata-enricher.status"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-12_075184_prepare_ro-crate-target.command"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-12_075184_prepare_ro-crate-target.stdout"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-12_075184_prepare_ro-crate-target.stderr"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-12_075184_prepare_ro-crate-target.status"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-14_153513_copy_2026-03-23_19-39-04_161273.command"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-14_153513_copy_2026-03-23_19-39-04_161273.stdout"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-14_153513_copy_2026-03-23_19-39-04_161273.stderr"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-14_153513_copy_2026-03-23_19-39-04_161273.status"
+                },
+                {
+                    "@id": "files/hactar/2026-03-23_19-39-04_161273_original/"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-15_575667_upload_original_ro_crate.command"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-15_575667_upload_original_ro_crate.stdout"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-15_575667_upload_original_ro_crate.stderr"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-15_575667_upload_original_ro_crate.status"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-18_652263_copy_2026-03-23_19-39-04_161273_reference.command"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-18_652263_copy_2026-03-23_19-39-04_161273_reference.stdout"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-18_652263_copy_2026-03-23_19-39-04_161273_reference.stderr"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-18_652263_copy_2026-03-23_19-39-04_161273_reference.status"
+                },
+                {
+                    "@id": "files/hactar/2026-03-23_19-39-04_161273_reference/"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-20_753009_upload_reference_ro_crate.command"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-20_753009_upload_reference_ro_crate.stdout"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-20_753009_upload_reference_ro_crate.stderr"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-20_753009_upload_reference_ro_crate.status"
+                },
+                {
+                    "@id": "config/2026-03-25_04-50-23_626075_variables.json"
+                },
+                {
+                    "@id": "files/hactar/enrichment_run00/"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata.file"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run00.loop"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run00.stdout"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run00.stderr"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run00.status"
+                },
+                {
+                    "@id": "files/hactar/enrichment_run01/"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run01.loop"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run01.stdout"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run01.stderr"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run01.status"
+                },
+                {
+                    "@id": "files/hactar/enrichment_run02/"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run02.loop"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run02.stdout"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run02.stderr"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run02.status"
+                },
+                {
+                    "@id": "files/hactar/enrichment_run03/"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run03.loop"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run03.stdout"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run03.stderr"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run03.status"
+                },
+                {
+                    "@id": "files/hactar/enrichment_run04/"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run04.loop"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run04.stdout"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run04.stderr"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run04.status"
+                },
+                {
+                    "@id": "files/hactar/enrichment_run05/"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run05.loop"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run05.stdout"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run05.stderr"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run05.status"
+                },
+                {
+                    "@id": "files/hactar/enrichment_run06/"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run06.loop"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run06.stdout"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run06.stderr"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run06.status"
+                },
+                {
+                    "@id": "files/hactar/enrichment_run07/"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run07.loop"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run07.stdout"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run07.stderr"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run07.status"
+                },
+                {
+                    "@id": "files/hactar/enrichment_run08/"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run08.loop"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run08.stdout"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run08.stderr"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run08.status"
+                },
+                {
+                    "@id": "files/hactar/enrichment_run09/"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run09.loop"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run09.stdout"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run09.stderr"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run09.status"
+                }
+            ],
+            "keywords": [
+                "RO-Crate",
+                "Metadata Enrichment",
+                "Large Language Models",
+                "Ollama",
+                "BERTScore"
+            ],
+            "mainEntity": {
+                "@id": "config/allocation.json"
+            },
+            "name": "Evaluation of Local LLMs for RO-Crate Metadata Enrichment"
+        },
+        {
+            "@id": "ro-crate-metadata.json",
+            "@type": "CreativeWork",
+            "about": {
+                "@id": "./"
+            },
+            "conformsTo": {
+                "@id": "https://w3id.org/ro/crate/1.2"
+            }
+        },
+        {
+            "@id": "http://doi.org/10.1145/3485983.3494841",
+            "@type": "CreativeWork",
+            "alternateName": "pos",
+            "citation": "http://doi.org/10.1145/3485983.3494841",
+            "description": "The pos Framework: A Methodology and Toolchain for Reproducible Network Experiments",
+            "name": "Plain Orchestrating Service",
+            "version": "3.0.0"
+        },
+        {
+            "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/19",
+            "@type": "WebSite",
+            "name": "Acrobat PDF 1.5"
+        },
+        {
+            "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/817",
+            "@type": "WebSite",
+            "name": "JSON Data Format"
+        },
+        {
+            "@id": "https://anonymous-4dc42.github.io/rise-ro-crate-profile/0.1.0/",
+            "@type": [
+                "CreativeWork",
+                "Profile"
+            ],
+            "alternateName": "RISE RO-Crate Profile",
+            "name": "Research Infrastructure Shareable Experiments RO-Crate Profile",
+            "version": "0.1.0"
+        },
+        {
+            "@id": "https://orcid.org/XXXX-XXXX-XXXX-XXXX",
+            "@type": "Person",
+            "affiliation": {
+                "@id": "https://ror.org/anonymous"
+            },
+            "familyName": "Anonymous",
+            "givenName": "Anonymous",
+            "name": "Anonymous"
+        },
+        {
+            "@id": "https://credit.niso.org/contributor-roles/investigation/",
+            "@type": "Role",
+            "contributor": [
+                {
+                    "@id": "https://orcid.org/XXXX-XXXX-XXXX-XXXX"
+                }
+            ],
+            "roleName": "Investigation"
+        },
+        {
+            "@id": "https://ror.org/anonymous",
+            "@type": "Organization",
+            "location": "Anonym City, Anonymized",
+            "name": "Anonym University",
+            "url": "https://www.anonymized-university.com"
+        },
+        {
+            "@id": "config/hactar/hardware.json",
+            "@type": "File",
+            "contentSize": "20537",
+            "dateCreated": "2026-03-25T04:45:07.375473",
+            "dateModified": "2026-03-25T04:45:07.375473",
+            "description": "Contains information about CPU, GPU, RAM, motherboard, storage, and network",
+            "encodingFormat": {
+                "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/817"
+            },
+            "name": "Hardware of testbed node hactar"
+        },
+        {
+            "@id": "config/allocation.json",
+            "@type": "Experiment",
+            "dateCreated": "2026-03-25T04:45:06.205927",
+            "dateModified": "2026-03-25T04:45:06.205927",
+            "encodingFormat": "application/json",
+            "executedCommands": [
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-47-49_883246_bootstrap.file"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-45-08_312776_reset.command"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-47-54_465879_setup_enrich-metadata.file"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-09_493936_copy_ai-metadata-enricher.command"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-12_075184_prepare_ro-crate-target.command"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-14_153513_copy_2026-03-23_19-39-04_161273.command"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-15_575667_upload_original_ro_crate.command"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-18_652263_copy_2026-03-23_19-39-04_161273_reference.command"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-20_753009_upload_reference_ro_crate.command"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata.file"
+                }
+            ],
+            "experimentController": [
+                {
+                    "@id": "http://doi.org/10.1145/3485983.3494841"
+                }
+            ],
+            "experimentNodes": [
+                {
+                    "@id": "hactar.anonymous.testbed"
+                }
+            ],
+            "includedOSImages": [
+                {
+                    "@id": "staging/debian-bookworm-nvidia-cuda-toolkit@2025-09-05T08:54:41+00:00"
+                }
+            ],
+            "name": "anonymous_260325_044506_205537",
+            "resultData": [
+                {
+                    "@id": "files/hactar/2026-03-23_19-39-04_161273_original/"
+                },
+                {
+                    "@id": "files/hactar/2026-03-23_19-39-04_161273_reference/"
+                },
+                {
+                    "@id": "files/hactar/enrichment_run00/"
+                },
+                {
+                    "@id": "files/hactar/enrichment_run01/"
+                },
+                {
+                    "@id": "files/hactar/enrichment_run02/"
+                },
+                {
+                    "@id": "files/hactar/enrichment_run03/"
+                },
+                {
+                    "@id": "files/hactar/enrichment_run04/"
+                },
+                {
+                    "@id": "files/hactar/enrichment_run05/"
+                },
+                {
+                    "@id": "files/hactar/enrichment_run06/"
+                },
+                {
+                    "@id": "files/hactar/enrichment_run07/"
+                },
+                {
+                    "@id": "files/hactar/enrichment_run08/"
+                },
+                {
+                    "@id": "files/hactar/enrichment_run09/"
+                }
+            ],
+            "supplementaryData": []
+        },
+        {
+            "@id": "config/hactar/topology.pdf",
+            "@type": "File",
+            "contentSize": "22667",
+            "dateCreated": "2026-03-25T04:45:07.381827",
+            "dateModified": "2026-03-25T04:45:07.381827",
+            "description": "contains network topology figure with neighboring nodes including link speed",
+            "encodingFormat": {
+                "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/19"
+            },
+            "name": "Network topology of testbed node hactar"
+        },
+        {
+            "@id": "hactar.anonymous.testbed",
+            "@type": "ExperimentNode",
+            "description": "Metadata for Testbed Node hactar",
+            "hardware": {
+                "@id": "config/hactar/hardware.json"
+            },
+            "name": "hactar",
+            "visualizedTopology": {
+                "@id": "config/hactar/topology.pdf"
+            }
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-47-49_883246_bootstrap.file",
+            "@type": "CommandFileBootstrap",
+            "contentSize": "10495",
+            "dateCreated": "2026-03-25T04:47:49.883302",
+            "dateModified": "2026-03-25T04:47:49.883302",
+            "description": "Script executed to set up the environment and install pos tools on node hactar",
+            "duration": "PT2S",
+            "endTime": "2026-03-25T04:47:52.490491",
+            "executedOn": {
+                "@id": "hactar.anonymous.testbed"
+            },
+            "keywords": [
+                "command",
+                "script",
+                "bootstrap"
+            ],
+            "name": "bootstrap",
+            "startTime": "2026-03-25T04:47:49.883302",
+            "status": {
+                "@id": "scripts/hactar/2026-03-25_04-47-49_883246_bootstrap.status"
+            },
+            "stderr": {
+                "@id": "scripts/hactar/2026-03-25_04-47-49_883246_bootstrap.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/hactar/2026-03-25_04-47-49_883246_bootstrap.stdout"
+            }
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-47-49_883246_bootstrap.stdout",
+            "@type": "File",
+            "contentSize": "10686",
+            "dateCreated": "2026-03-25T04:47:49.883302",
+            "dateModified": "2026-03-25T04:47:49.883302",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-47-49_883246_bootstrap.file"
+            },
+            "name": "bootstrap"
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-47-49_883246_bootstrap.stderr",
+            "@type": "File",
+            "contentSize": "2057",
+            "dateCreated": "2026-03-25T04:47:49.883302",
+            "dateModified": "2026-03-25T04:47:49.883302",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-47-49_883246_bootstrap.file"
+            },
+            "name": "bootstrap"
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-47-49_883246_bootstrap.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-25T04:47:49.883302",
+            "dateModified": "2026-03-25T04:47:49.883302",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-47-49_883246_bootstrap.file"
+            },
+            "name": "bootstrap"
+        },
+        {
+            "@id": "staging/debian-bookworm-nvidia-cuda-toolkit@2025-09-05T08:54:41+00:00",
+            "@type": "OSImage",
+            "description": "This image was generated automatically and uses debian-bookworm-nvidia-cuda-toolkit@2025-09-05T08:54:41+00:00 as base.",
+            "fileSize": "4812963840",
+            "name": "debian-bookworm-nvidia-cuda-toolkit@2025-09-05T08:54:41+00:00"
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-45-08_312776_reset.command",
+            "@type": "CommandFileReset",
+            "bootParameters": [
+                "iommu=pt"
+            ],
+            "bootedImage": {
+                "@id": "staging/debian-bookworm-nvidia-cuda-toolkit@2025-09-05T08:54:41+00:00"
+            },
+            "contentSize": "692",
+            "dateCreated": "2026-03-25T04:45:08.312776",
+            "dateModified": "2026-03-25T04:45:08.312776",
+            "description": "Shuts down the node and restarts it from the specified live image to ensure a clean system state.",
+            "duration": "PT165S",
+            "endTime": "2026-03-25T04:47:53.893494",
+            "executedOn": {
+                "@id": "hactar.anonymous.testbed"
+            },
+            "keywords": [
+                "command",
+                "reset"
+            ],
+            "name": "reset",
+            "startTime": "2026-03-25T04:45:08.313140",
+            "status": {
+                "@id": "scripts/hactar/2026-03-25_04-45-08_312776_reset.status"
+            },
+            "stderr": {
+                "@id": "scripts/hactar/2026-03-25_04-45-08_312776_reset.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/hactar/2026-03-25_04-45-08_312776_reset.stdout"
+            }
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-45-08_312776_reset.stdout",
+            "@type": "File",
+            "contentSize": "4",
+            "dateCreated": "2026-03-25T04:45:08.312776",
+            "dateModified": "2026-03-25T04:45:08.312776",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-45-08_312776_reset.command"
+            },
+            "name": "reset"
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-45-08_312776_reset.stderr",
+            "@type": "File",
+            "contentSize": "4",
+            "dateCreated": "2026-03-25T04:45:08.312776",
+            "dateModified": "2026-03-25T04:45:08.312776",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-45-08_312776_reset.command"
+            },
+            "name": "reset"
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-45-08_312776_reset.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-25T04:45:08.312776",
+            "dateModified": "2026-03-25T04:45:08.312776",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-45-08_312776_reset.command"
+            },
+            "name": "reset"
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-47-54_465879_setup_enrich-metadata.file",
+            "@type": "CommandFile",
+            "contentSize": "1300",
+            "dateCreated": "2026-03-25T04:47:54.465879",
+            "dateModified": "2026-03-25T04:47:54.465879",
+            "duration": "PT134S",
+            "endTime": "2026-03-25T04:50:08.901235",
+            "executedOn": {
+                "@id": "hactar.anonymous.testbed"
+            },
+            "keywords": [
+                "command",
+                "script"
+            ],
+            "name": "setup_enrich-metadata",
+            "startTime": "2026-03-25T04:47:54.466069",
+            "status": {
+                "@id": "scripts/hactar/2026-03-25_04-47-54_465879_setup_enrich-metadata.status"
+            },
+            "stderr": {
+                "@id": "scripts/hactar/2026-03-25_04-47-54_465879_setup_enrich-metadata.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/hactar/2026-03-25_04-47-54_465879_setup_enrich-metadata.stdout"
+            }
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-47-54_465879_setup_enrich-metadata.stdout",
+            "@type": "File",
+            "contentSize": "21269",
+            "dateCreated": "2026-03-25T04:47:54.465879",
+            "dateModified": "2026-03-25T04:47:54.465879",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-47-54_465879_setup_enrich-metadata.file"
+            },
+            "name": "setup_enrich-metadata"
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-47-54_465879_setup_enrich-metadata.stderr",
+            "@type": "File",
+            "contentSize": "16040",
+            "dateCreated": "2026-03-25T04:47:54.465879",
+            "dateModified": "2026-03-25T04:47:54.465879",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-47-54_465879_setup_enrich-metadata.file"
+            },
+            "name": "setup_enrich-metadata"
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-47-54_465879_setup_enrich-metadata.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-25T04:47:54.465879",
+            "dateModified": "2026-03-25T04:47:54.465879",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-47-54_465879_setup_enrich-metadata.file"
+            },
+            "name": "setup_enrich-metadata"
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-09_493936_copy_ai-metadata-enricher.command",
+            "@type": "CommandFileCopy",
+            "contentSize": "107",
+            "dateCreated": "2026-03-25T04:50:09.493936",
+            "dateModified": "2026-03-25T04:50:09.493936",
+            "description": "Recursively copies folder from /home/anonymous/experiments/ai-metadata-enricher to /root/ai-metadata-enricher on node hactar.",
+            "destinationPath": "/root/ai-metadata-enricher",
+            "duration": "PT2S",
+            "endTime": "2026-03-25T04:50:11.494625",
+            "executedOn": {
+                "@id": "hactar.anonymous.testbed"
+            },
+            "keywords": [
+                "command",
+                "copy"
+            ],
+            "name": "copy_files",
+            "recursiveCopy": true,
+            "sourcePath": "/home/anonymous/experiments/ai-metadata-enricher",
+            "startTime": "2026-03-25T04:50:09.494175",
+            "status": {
+                "@id": "scripts/hactar/2026-03-25_04-50-09_493936_copy_ai-metadata-enricher.status"
+            },
+            "stderr": {
+                "@id": "scripts/hactar/2026-03-25_04-50-09_493936_copy_ai-metadata-enricher.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/hactar/2026-03-25_04-50-09_493936_copy_ai-metadata-enricher.stdout"
+            }
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-09_493936_copy_ai-metadata-enricher.stdout",
+            "@type": "File",
+            "contentSize": "4",
+            "dateCreated": "2026-03-25T04:50:09.493936",
+            "dateModified": "2026-03-25T04:50:09.493936",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-50-09_493936_copy_ai-metadata-enricher.command"
+            },
+            "name": "copy_ai-metadata-enricher"
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-09_493936_copy_ai-metadata-enricher.stderr",
+            "@type": "File",
+            "contentSize": "4",
+            "dateCreated": "2026-03-25T04:50:09.493936",
+            "dateModified": "2026-03-25T04:50:09.493936",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-50-09_493936_copy_ai-metadata-enricher.command"
+            },
+            "name": "copy_ai-metadata-enricher"
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-09_493936_copy_ai-metadata-enricher.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-25T04:50:09.493936",
+            "dateModified": "2026-03-25T04:50:09.493936",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-50-09_493936_copy_ai-metadata-enricher.command"
+            },
+            "name": "copy_ai-metadata-enricher"
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-12_075184_prepare_ro-crate-target.command",
+            "@type": "CommandFile",
+            "contentSize": "144",
+            "dateCreated": "2026-03-25T04:50:12.075184",
+            "dateModified": "2026-03-25T04:50:12.075184",
+            "duration": "PT1S",
+            "endTime": "2026-03-25T04:50:13.609103",
+            "executedOn": {
+                "@id": "hactar.anonymous.testbed"
+            },
+            "keywords": [
+                "command"
+            ],
+            "name": "prepare_ro-crate-target",
+            "startTime": "2026-03-25T04:50:12.075579",
+            "status": {
+                "@id": "scripts/hactar/2026-03-25_04-50-12_075184_prepare_ro-crate-target.status"
+            },
+            "stderr": {
+                "@id": "scripts/hactar/2026-03-25_04-50-12_075184_prepare_ro-crate-target.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/hactar/2026-03-25_04-50-12_075184_prepare_ro-crate-target.stdout"
+            }
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-12_075184_prepare_ro-crate-target.stdout",
+            "@type": "File",
+            "contentSize": "0",
+            "dateCreated": "2026-03-25T04:50:12.075184",
+            "dateModified": "2026-03-25T04:50:12.075184",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-50-12_075184_prepare_ro-crate-target.command"
+            },
+            "name": "prepare_ro-crate-target"
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-12_075184_prepare_ro-crate-target.stderr",
+            "@type": "File",
+            "contentSize": "0",
+            "dateCreated": "2026-03-25T04:50:12.075184",
+            "dateModified": "2026-03-25T04:50:12.075184",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-50-12_075184_prepare_ro-crate-target.command"
+            },
+            "name": "prepare_ro-crate-target"
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-12_075184_prepare_ro-crate-target.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-25T04:50:12.075184",
+            "dateModified": "2026-03-25T04:50:12.075184",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-50-12_075184_prepare_ro-crate-target.command"
+            },
+            "name": "prepare_ro-crate-target"
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-14_153513_copy_2026-03-23_19-39-04_161273.command",
+            "@type": "CommandFileCopy",
+            "contentSize": "159",
+            "dateCreated": "2026-03-25T04:50:14.153513",
+            "dateModified": "2026-03-25T04:50:14.153513",
+            "description": "Recursively copies folder from /srv/testbed/results/anonymous/default/llm-enrichment/MoonGen/2026-03-23_19-39-04_161273 to /srv/testbed/results/anonymous/default on node hactar.",
+            "destinationPath": "/srv/testbed/results/anonymous/default",
+            "duration": "PT0S",
+            "endTime": "2026-03-25T04:50:15.038743",
+            "executedOn": {
+                "@id": "hactar.anonymous.testbed"
+            },
+            "keywords": [
+                "command",
+                "copy"
+            ],
+            "name": "copy_result_folder",
+            "recursiveCopy": true,
+            "sourcePath": "/srv/testbed/results/anonymous/default/llm-enrichment/MoonGen/2026-03-23_19-39-04_161273",
+            "startTime": "2026-03-25T04:50:14.153924",
+            "status": {
+                "@id": "scripts/hactar/2026-03-25_04-50-14_153513_copy_2026-03-23_19-39-04_161273.status"
+            },
+            "stderr": {
+                "@id": "scripts/hactar/2026-03-25_04-50-14_153513_copy_2026-03-23_19-39-04_161273.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/hactar/2026-03-25_04-50-14_153513_copy_2026-03-23_19-39-04_161273.stdout"
+            }
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-14_153513_copy_2026-03-23_19-39-04_161273.stdout",
+            "@type": "File",
+            "contentSize": "4",
+            "dateCreated": "2026-03-25T04:50:14.153513",
+            "dateModified": "2026-03-25T04:50:14.153513",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-50-14_153513_copy_2026-03-23_19-39-04_161273.command"
+            },
+            "name": "copy_2026-03-23_19-39-04_161273"
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-14_153513_copy_2026-03-23_19-39-04_161273.stderr",
+            "@type": "File",
+            "contentSize": "4",
+            "dateCreated": "2026-03-25T04:50:14.153513",
+            "dateModified": "2026-03-25T04:50:14.153513",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-50-14_153513_copy_2026-03-23_19-39-04_161273.command"
+            },
+            "name": "copy_2026-03-23_19-39-04_161273"
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-14_153513_copy_2026-03-23_19-39-04_161273.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-25T04:50:14.153513",
+            "dateModified": "2026-03-25T04:50:14.153513",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-50-14_153513_copy_2026-03-23_19-39-04_161273.command"
+            },
+            "name": "copy_2026-03-23_19-39-04_161273"
+        },
+        {
+            "@id": "files/hactar/2026-03-23_19-39-04_161273_original/",
+            "@type": "Dataset",
+            "dateCreated": "2026-03-25T04:50:17.679229",
+            "dateModified": "2026-03-25T04:50:17.679229",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-50-15_575667_upload_original_ro_crate.command"
+            },
+            "keywords": [
+                "pos_run",
+                "upload"
+            ],
+            "name": "2026-03-23_19-39-04_161273_original"
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-15_575667_upload_original_ro_crate.command",
+            "@type": "CommandFile",
+            "contentSize": "167",
+            "dateCreated": "2026-03-25T04:50:15.575667",
+            "dateModified": "2026-03-25T04:50:15.575667",
+            "duration": "PT2S",
+            "endTime": "2026-03-25T04:50:17.821708",
+            "executedOn": {
+                "@id": "hactar.anonymous.testbed"
+            },
+            "keywords": [
+                "command"
+            ],
+            "name": "upload_original_ro_crate",
+            "resultData": [
+                {
+                    "@id": "files/hactar/2026-03-23_19-39-04_161273_original/"
+                }
+            ],
+            "startTime": "2026-03-25T04:50:15.576069",
+            "status": {
+                "@id": "scripts/hactar/2026-03-25_04-50-15_575667_upload_original_ro_crate.status"
+            },
+            "stderr": {
+                "@id": "scripts/hactar/2026-03-25_04-50-15_575667_upload_original_ro_crate.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/hactar/2026-03-25_04-50-15_575667_upload_original_ro_crate.stdout"
+            }
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-15_575667_upload_original_ro_crate.stdout",
+            "@type": "File",
+            "contentSize": "0",
+            "dateCreated": "2026-03-25T04:50:15.575667",
+            "dateModified": "2026-03-25T04:50:15.575667",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-50-15_575667_upload_original_ro_crate.command"
+            },
+            "name": "upload_original_ro_crate"
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-15_575667_upload_original_ro_crate.stderr",
+            "@type": "File",
+            "contentSize": "0",
+            "dateCreated": "2026-03-25T04:50:15.575667",
+            "dateModified": "2026-03-25T04:50:15.575667",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-50-15_575667_upload_original_ro_crate.command"
+            },
+            "name": "upload_original_ro_crate"
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-15_575667_upload_original_ro_crate.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-25T04:50:15.575667",
+            "dateModified": "2026-03-25T04:50:15.575667",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-50-15_575667_upload_original_ro_crate.command"
+            },
+            "name": "upload_original_ro_crate"
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-18_652263_copy_2026-03-23_19-39-04_161273_reference.command",
+            "@type": "CommandFileCopy",
+            "contentSize": "169",
+            "dateCreated": "2026-03-25T04:50:18.652263",
+            "dateModified": "2026-03-25T04:50:18.652263",
+            "description": "Recursively copies folder from /srv/testbed/results/anonymous/default/llm-enrichment/MoonGen/2026-03-23_19-39-04_161273_reference to /srv/testbed/results/anonymous/default on node hactar.",
+            "destinationPath": "/srv/testbed/results/anonymous/default",
+            "duration": "PT1S",
+            "endTime": "2026-03-25T04:50:20.082121",
+            "executedOn": {
+                "@id": "hactar.anonymous.testbed"
+            },
+            "keywords": [
+                "command",
+                "copy"
+            ],
+            "name": "copy_reference_folder",
+            "recursiveCopy": true,
+            "sourcePath": "/srv/testbed/results/anonymous/default/llm-enrichment/MoonGen/2026-03-23_19-39-04_161273_reference",
+            "startTime": "2026-03-25T04:50:18.652529",
+            "status": {
+                "@id": "scripts/hactar/2026-03-25_04-50-18_652263_copy_2026-03-23_19-39-04_161273_reference.status"
+            },
+            "stderr": {
+                "@id": "scripts/hactar/2026-03-25_04-50-18_652263_copy_2026-03-23_19-39-04_161273_reference.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/hactar/2026-03-25_04-50-18_652263_copy_2026-03-23_19-39-04_161273_reference.stdout"
+            }
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-18_652263_copy_2026-03-23_19-39-04_161273_reference.stdout",
+            "@type": "File",
+            "contentSize": "4",
+            "dateCreated": "2026-03-25T04:50:18.652263",
+            "dateModified": "2026-03-25T04:50:18.652263",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-50-18_652263_copy_2026-03-23_19-39-04_161273_reference.command"
+            },
+            "name": "copy_2026-03-23_19-39-04_161273_reference"
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-18_652263_copy_2026-03-23_19-39-04_161273_reference.stderr",
+            "@type": "File",
+            "contentSize": "4",
+            "dateCreated": "2026-03-25T04:50:18.652263",
+            "dateModified": "2026-03-25T04:50:18.652263",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-50-18_652263_copy_2026-03-23_19-39-04_161273_reference.command"
+            },
+            "name": "copy_2026-03-23_19-39-04_161273_reference"
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-18_652263_copy_2026-03-23_19-39-04_161273_reference.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-25T04:50:18.652263",
+            "dateModified": "2026-03-25T04:50:18.652263",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-50-18_652263_copy_2026-03-23_19-39-04_161273_reference.command"
+            },
+            "name": "copy_2026-03-23_19-39-04_161273_reference"
+        },
+        {
+            "@id": "files/hactar/2026-03-23_19-39-04_161273_reference/",
+            "@type": "Dataset",
+            "dateCreated": "2026-03-25T04:50:22.800013",
+            "dateModified": "2026-03-25T04:50:22.800013",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-50-20_753009_upload_reference_ro_crate.command"
+            },
+            "keywords": [
+                "pos_run",
+                "upload"
+            ],
+            "name": "2026-03-23_19-39-04_161273_reference"
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-20_753009_upload_reference_ro_crate.command",
+            "@type": "CommandFile",
+            "contentSize": "178",
+            "dateCreated": "2026-03-25T04:50:20.753009",
+            "dateModified": "2026-03-25T04:50:20.753009",
+            "duration": "PT2S",
+            "endTime": "2026-03-25T04:50:22.885267",
+            "executedOn": {
+                "@id": "hactar.anonymous.testbed"
+            },
+            "keywords": [
+                "command"
+            ],
+            "name": "upload_reference_ro_crate",
+            "resultData": [
+                {
+                    "@id": "files/hactar/2026-03-23_19-39-04_161273_reference/"
+                }
+            ],
+            "startTime": "2026-03-25T04:50:20.753443",
+            "status": {
+                "@id": "scripts/hactar/2026-03-25_04-50-20_753009_upload_reference_ro_crate.status"
+            },
+            "stderr": {
+                "@id": "scripts/hactar/2026-03-25_04-50-20_753009_upload_reference_ro_crate.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/hactar/2026-03-25_04-50-20_753009_upload_reference_ro_crate.stdout"
+            }
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-20_753009_upload_reference_ro_crate.stdout",
+            "@type": "File",
+            "contentSize": "0",
+            "dateCreated": "2026-03-25T04:50:20.753009",
+            "dateModified": "2026-03-25T04:50:20.753009",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-50-20_753009_upload_reference_ro_crate.command"
+            },
+            "name": "upload_reference_ro_crate"
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-20_753009_upload_reference_ro_crate.stderr",
+            "@type": "File",
+            "contentSize": "0",
+            "dateCreated": "2026-03-25T04:50:20.753009",
+            "dateModified": "2026-03-25T04:50:20.753009",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-50-20_753009_upload_reference_ro_crate.command"
+            },
+            "name": "upload_reference_ro_crate"
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-20_753009_upload_reference_ro_crate.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-25T04:50:20.753009",
+            "dateModified": "2026-03-25T04:50:20.753009",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-50-20_753009_upload_reference_ro_crate.command"
+            },
+            "name": "upload_reference_ro_crate"
+        },
+        {
+            "@id": "config/2026-03-25_04-50-23_626075_variables.json",
+            "@type": "File",
+            "contentSize": "868",
+            "dateCreated": "2026-03-25T04:50:23.626075",
+            "dateModified": "2026-03-25T04:50:23.626075",
+            "description": "Contains a variable set for the allocation as of 2026-03-25_04-50-23_626075.",
+            "encodingFormat": {
+                "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/817"
+            },
+            "keywords": [
+                "variables"
+            ],
+            "name": "VariableSet"
+        },
+        {
+            "@id": "files/hactar/enrichment_run00/",
+            "@type": "Dataset",
+            "dateCreated": "2026-03-25T04:52:18.627920",
+            "dateModified": "2026-03-25T04:52:18.627920",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run00.loop"
+            },
+            "keywords": [
+                "pos_run",
+                "upload"
+            ],
+            "name": "enrichment_run00"
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata.file",
+            "@type": "CommandFileLooped",
+            "contentSize": "12428",
+            "dateCreated": "2026-03-25T04:50:24.185584",
+            "dateModified": "2026-03-25T04:50:24.185584",
+            "duration": "PT1926S",
+            "endTime": "2026-03-25T05:22:30.297355",
+            "executedOn": {
+                "@id": "hactar.anonymous.testbed"
+            },
+            "keywords": [
+                "command",
+                "script",
+                "looped"
+            ],
+            "loopRuns": [
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run00.loop"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run01.loop"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run02.loop"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run03.loop"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run04.loop"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run05.loop"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run06.loop"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run07.loop"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run08.loop"
+                },
+                {
+                    "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run09.loop"
+                }
+            ],
+            "name": "experiment_enrich-metadata",
+            "startTime": "2026-03-25T04:50:24.189046",
+            "variableSet": {
+                "@id": "config/2026-03-25_04-50-23_626075_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run00.loop",
+            "@type": "LoopRun",
+            "contentSize": "415",
+            "dateCreated": "2026-03-25T04:50:24.185584",
+            "dateModified": "2026-03-25T04:50:24.185584",
+            "duration": "PT114S",
+            "endTime": "2026-03-25T04:52:18.833109",
+            "keywords": [
+                "variables",
+                "loop_run"
+            ],
+            "name": "experiment_enrich-metadata_run00",
+            "resultData": [
+                {
+                    "@id": "files/hactar/enrichment_run00/"
+                }
+            ],
+            "runOfLoopedCommand": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata.file"
+            },
+            "startTime": "2026-03-25T04:50:24.189046",
+            "status": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run00.status"
+            },
+            "stderr": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run00.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run00.stdout"
+            }
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run00.stdout",
+            "@type": "File",
+            "contentSize": "35397",
+            "dateCreated": "2026-03-25T04:50:24.185584",
+            "dateModified": "2026-03-25T04:50:24.185584",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run00.loop"
+            },
+            "name": "experiment_enrich-metadata_run00"
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run00.stderr",
+            "@type": "File",
+            "contentSize": "4074",
+            "dateCreated": "2026-03-25T04:50:24.185584",
+            "dateModified": "2026-03-25T04:50:24.185584",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run00.loop"
+            },
+            "name": "experiment_enrich-metadata_run00"
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run00.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-25T04:50:24.185584",
+            "dateModified": "2026-03-25T04:50:24.185584",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run00.loop"
+            },
+            "name": "experiment_enrich-metadata_run00"
+        },
+        {
+            "@id": "files/hactar/enrichment_run01/",
+            "@type": "Dataset",
+            "dateCreated": "2026-03-25T04:55:07.903017",
+            "dateModified": "2026-03-25T04:55:07.903017",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run01.loop"
+            },
+            "keywords": [
+                "pos_run",
+                "upload"
+            ],
+            "name": "enrichment_run01"
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run01.loop",
+            "@type": "LoopRun",
+            "contentSize": "416",
+            "dateCreated": "2026-03-25T04:50:24.185584",
+            "dateModified": "2026-03-25T04:50:24.185584",
+            "duration": "PT169S",
+            "endTime": "2026-03-25T04:55:08.164291",
+            "keywords": [
+                "variables",
+                "loop_run"
+            ],
+            "name": "experiment_enrich-metadata_run01",
+            "resultData": [
+                {
+                    "@id": "files/hactar/enrichment_run01/"
+                }
+            ],
+            "runOfLoopedCommand": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata.file"
+            },
+            "startTime": "2026-03-25T04:52:18.833109",
+            "status": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run01.status"
+            },
+            "stderr": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run01.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run01.stdout"
+            }
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run01.stdout",
+            "@type": "File",
+            "contentSize": "27121",
+            "dateCreated": "2026-03-25T04:50:24.185584",
+            "dateModified": "2026-03-25T04:50:24.185584",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run01.loop"
+            },
+            "name": "experiment_enrich-metadata_run01"
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run01.stderr",
+            "@type": "File",
+            "contentSize": "4074",
+            "dateCreated": "2026-03-25T04:50:24.185584",
+            "dateModified": "2026-03-25T04:50:24.185584",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run01.loop"
+            },
+            "name": "experiment_enrich-metadata_run01"
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run01.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-25T04:50:24.185584",
+            "dateModified": "2026-03-25T04:50:24.185584",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run01.loop"
+            },
+            "name": "experiment_enrich-metadata_run01"
+        },
+        {
+            "@id": "files/hactar/enrichment_run02/",
+            "@type": "Dataset",
+            "dateCreated": "2026-03-25T05:01:35.842466",
+            "dateModified": "2026-03-25T05:01:35.842466",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run02.loop"
+            },
+            "keywords": [
+                "pos_run",
+                "upload"
+            ],
+            "name": "enrichment_run02"
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run02.loop",
+            "@type": "LoopRun",
+            "contentSize": "415",
+            "dateCreated": "2026-03-25T04:50:24.185584",
+            "dateModified": "2026-03-25T04:50:24.185584",
+            "duration": "PT387S",
+            "endTime": "2026-03-25T05:01:36.112342",
+            "keywords": [
+                "variables",
+                "loop_run"
+            ],
+            "name": "experiment_enrich-metadata_run02",
+            "resultData": [
+                {
+                    "@id": "files/hactar/enrichment_run02/"
+                }
+            ],
+            "runOfLoopedCommand": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata.file"
+            },
+            "startTime": "2026-03-25T04:55:08.164291",
+            "status": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run02.status"
+            },
+            "stderr": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run02.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run02.stdout"
+            }
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run02.stdout",
+            "@type": "File",
+            "contentSize": "27139",
+            "dateCreated": "2026-03-25T04:50:24.185584",
+            "dateModified": "2026-03-25T04:50:24.185584",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run02.loop"
+            },
+            "name": "experiment_enrich-metadata_run02"
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run02.stderr",
+            "@type": "File",
+            "contentSize": "4074",
+            "dateCreated": "2026-03-25T04:50:24.185584",
+            "dateModified": "2026-03-25T04:50:24.185584",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run02.loop"
+            },
+            "name": "experiment_enrich-metadata_run02"
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run02.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-25T04:50:24.185584",
+            "dateModified": "2026-03-25T04:50:24.185584",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run02.loop"
+            },
+            "name": "experiment_enrich-metadata_run02"
+        },
+        {
+            "@id": "files/hactar/enrichment_run03/",
+            "@type": "Dataset",
+            "dateCreated": "2026-03-25T05:05:56.066141",
+            "dateModified": "2026-03-25T05:05:56.066141",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run03.loop"
+            },
+            "keywords": [
+                "pos_run",
+                "upload"
+            ],
+            "name": "enrichment_run03"
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run03.loop",
+            "@type": "LoopRun",
+            "contentSize": "420",
+            "dateCreated": "2026-03-25T04:50:24.185584",
+            "dateModified": "2026-03-25T04:50:24.185584",
+            "duration": "PT260S",
+            "endTime": "2026-03-25T05:05:56.367620",
+            "keywords": [
+                "variables",
+                "loop_run"
+            ],
+            "name": "experiment_enrich-metadata_run03",
+            "resultData": [
+                {
+                    "@id": "files/hactar/enrichment_run03/"
+                }
+            ],
+            "runOfLoopedCommand": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata.file"
+            },
+            "startTime": "2026-03-25T05:01:36.112342",
+            "status": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run03.status"
+            },
+            "stderr": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run03.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run03.stdout"
+            }
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run03.stdout",
+            "@type": "File",
+            "contentSize": "27237",
+            "dateCreated": "2026-03-25T04:50:24.185584",
+            "dateModified": "2026-03-25T04:50:24.185584",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run03.loop"
+            },
+            "name": "experiment_enrich-metadata_run03"
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run03.stderr",
+            "@type": "File",
+            "contentSize": "4074",
+            "dateCreated": "2026-03-25T04:50:24.185584",
+            "dateModified": "2026-03-25T04:50:24.185584",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run03.loop"
+            },
+            "name": "experiment_enrich-metadata_run03"
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run03.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-25T04:50:24.185584",
+            "dateModified": "2026-03-25T04:50:24.185584",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run03.loop"
+            },
+            "name": "experiment_enrich-metadata_run03"
+        },
+        {
+            "@id": "files/hactar/enrichment_run04/",
+            "@type": "Dataset",
+            "dateCreated": "2026-03-25T05:09:48.950280",
+            "dateModified": "2026-03-25T05:09:48.950280",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run04.loop"
+            },
+            "keywords": [
+                "pos_run",
+                "upload"
+            ],
+            "name": "enrichment_run04"
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run04.loop",
+            "@type": "LoopRun",
+            "contentSize": "417",
+            "dateCreated": "2026-03-25T04:50:24.185584",
+            "dateModified": "2026-03-25T04:50:24.185584",
+            "duration": "PT232S",
+            "endTime": "2026-03-25T05:09:49.274990",
+            "keywords": [
+                "variables",
+                "loop_run"
+            ],
+            "name": "experiment_enrich-metadata_run04",
+            "resultData": [
+                {
+                    "@id": "files/hactar/enrichment_run04/"
+                }
+            ],
+            "runOfLoopedCommand": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata.file"
+            },
+            "startTime": "2026-03-25T05:05:56.367620",
+            "status": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run04.status"
+            },
+            "stderr": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run04.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run04.stdout"
+            }
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run04.stdout",
+            "@type": "File",
+            "contentSize": "27145",
+            "dateCreated": "2026-03-25T04:50:24.185584",
+            "dateModified": "2026-03-25T04:50:24.185584",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run04.loop"
+            },
+            "name": "experiment_enrich-metadata_run04"
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run04.stderr",
+            "@type": "File",
+            "contentSize": "4074",
+            "dateCreated": "2026-03-25T04:50:24.185584",
+            "dateModified": "2026-03-25T04:50:24.185584",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run04.loop"
+            },
+            "name": "experiment_enrich-metadata_run04"
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run04.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-25T04:50:24.185584",
+            "dateModified": "2026-03-25T04:50:24.185584",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run04.loop"
+            },
+            "name": "experiment_enrich-metadata_run04"
+        },
+        {
+            "@id": "files/hactar/enrichment_run05/",
+            "@type": "Dataset",
+            "dateCreated": "2026-03-25T05:11:00.104985",
+            "dateModified": "2026-03-25T05:11:00.104985",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run05.loop"
+            },
+            "keywords": [
+                "pos_run",
+                "upload"
+            ],
+            "name": "enrichment_run05"
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run05.loop",
+            "@type": "LoopRun",
+            "contentSize": "417",
+            "dateCreated": "2026-03-25T04:50:24.185584",
+            "dateModified": "2026-03-25T04:50:24.185584",
+            "duration": "PT71S",
+            "endTime": "2026-03-25T05:11:00.442938",
+            "keywords": [
+                "variables",
+                "loop_run"
+            ],
+            "name": "experiment_enrich-metadata_run05",
+            "resultData": [
+                {
+                    "@id": "files/hactar/enrichment_run05/"
+                }
+            ],
+            "runOfLoopedCommand": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata.file"
+            },
+            "startTime": "2026-03-25T05:09:49.274990",
+            "status": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run05.status"
+            },
+            "stderr": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run05.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run05.stdout"
+            }
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run05.stdout",
+            "@type": "File",
+            "contentSize": "27117",
+            "dateCreated": "2026-03-25T04:50:24.185584",
+            "dateModified": "2026-03-25T04:50:24.185584",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run05.loop"
+            },
+            "name": "experiment_enrich-metadata_run05"
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run05.stderr",
+            "@type": "File",
+            "contentSize": "4074",
+            "dateCreated": "2026-03-25T04:50:24.185584",
+            "dateModified": "2026-03-25T04:50:24.185584",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run05.loop"
+            },
+            "name": "experiment_enrich-metadata_run05"
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run05.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-25T04:50:24.185584",
+            "dateModified": "2026-03-25T04:50:24.185584",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run05.loop"
+            },
+            "name": "experiment_enrich-metadata_run05"
+        },
+        {
+            "@id": "files/hactar/enrichment_run06/",
+            "@type": "Dataset",
+            "dateCreated": "2026-03-25T05:12:44.507445",
+            "dateModified": "2026-03-25T05:12:44.507445",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run06.loop"
+            },
+            "keywords": [
+                "pos_run",
+                "upload"
+            ],
+            "name": "enrichment_run06"
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run06.loop",
+            "@type": "LoopRun",
+            "contentSize": "418",
+            "dateCreated": "2026-03-25T04:50:24.185584",
+            "dateModified": "2026-03-25T04:50:24.185584",
+            "duration": "PT104S",
+            "endTime": "2026-03-25T05:12:44.880828",
+            "keywords": [
+                "variables",
+                "loop_run"
+            ],
+            "name": "experiment_enrich-metadata_run06",
+            "resultData": [
+                {
+                    "@id": "files/hactar/enrichment_run06/"
+                }
+            ],
+            "runOfLoopedCommand": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata.file"
+            },
+            "startTime": "2026-03-25T05:11:00.442938",
+            "status": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run06.status"
+            },
+            "stderr": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run06.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run06.stdout"
+            }
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run06.stdout",
+            "@type": "File",
+            "contentSize": "27130",
+            "dateCreated": "2026-03-25T04:50:24.185584",
+            "dateModified": "2026-03-25T04:50:24.185584",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run06.loop"
+            },
+            "name": "experiment_enrich-metadata_run06"
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run06.stderr",
+            "@type": "File",
+            "contentSize": "4074",
+            "dateCreated": "2026-03-25T04:50:24.185584",
+            "dateModified": "2026-03-25T04:50:24.185584",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run06.loop"
+            },
+            "name": "experiment_enrich-metadata_run06"
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run06.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-25T04:50:24.185584",
+            "dateModified": "2026-03-25T04:50:24.185584",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run06.loop"
+            },
+            "name": "experiment_enrich-metadata_run06"
+        },
+        {
+            "@id": "files/hactar/enrichment_run07/",
+            "@type": "Dataset",
+            "dateCreated": "2026-03-25T05:17:58.114184",
+            "dateModified": "2026-03-25T05:17:58.114184",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run07.loop"
+            },
+            "keywords": [
+                "pos_run",
+                "upload"
+            ],
+            "name": "enrichment_run07"
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run07.loop",
+            "@type": "LoopRun",
+            "contentSize": "417",
+            "dateCreated": "2026-03-25T04:50:24.185584",
+            "dateModified": "2026-03-25T04:50:24.185584",
+            "duration": "PT313S",
+            "endTime": "2026-03-25T05:17:58.471550",
+            "keywords": [
+                "variables",
+                "loop_run"
+            ],
+            "name": "experiment_enrich-metadata_run07",
+            "resultData": [
+                {
+                    "@id": "files/hactar/enrichment_run07/"
+                }
+            ],
+            "runOfLoopedCommand": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata.file"
+            },
+            "startTime": "2026-03-25T05:12:44.880828",
+            "status": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run07.status"
+            },
+            "stderr": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run07.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run07.stdout"
+            }
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run07.stdout",
+            "@type": "File",
+            "contentSize": "27145",
+            "dateCreated": "2026-03-25T04:50:24.185584",
+            "dateModified": "2026-03-25T04:50:24.185584",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run07.loop"
+            },
+            "name": "experiment_enrich-metadata_run07"
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run07.stderr",
+            "@type": "File",
+            "contentSize": "4074",
+            "dateCreated": "2026-03-25T04:50:24.185584",
+            "dateModified": "2026-03-25T04:50:24.185584",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run07.loop"
+            },
+            "name": "experiment_enrich-metadata_run07"
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run07.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-25T04:50:24.185584",
+            "dateModified": "2026-03-25T04:50:24.185584",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run07.loop"
+            },
+            "name": "experiment_enrich-metadata_run07"
+        },
+        {
+            "@id": "files/hactar/enrichment_run08/",
+            "@type": "Dataset",
+            "dateCreated": "2026-03-25T05:21:19.948738",
+            "dateModified": "2026-03-25T05:21:19.948738",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run08.loop"
+            },
+            "keywords": [
+                "pos_run",
+                "upload"
+            ],
+            "name": "enrichment_run08"
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run08.loop",
+            "@type": "LoopRun",
+            "contentSize": "422",
+            "dateCreated": "2026-03-25T04:50:24.185584",
+            "dateModified": "2026-03-25T04:50:24.185584",
+            "duration": "PT201S",
+            "endTime": "2026-03-25T05:21:20.349989",
+            "keywords": [
+                "variables",
+                "loop_run"
+            ],
+            "name": "experiment_enrich-metadata_run08",
+            "resultData": [
+                {
+                    "@id": "files/hactar/enrichment_run08/"
+                }
+            ],
+            "runOfLoopedCommand": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata.file"
+            },
+            "startTime": "2026-03-25T05:17:58.471550",
+            "status": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run08.status"
+            },
+            "stderr": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run08.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run08.stdout"
+            }
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run08.stdout",
+            "@type": "File",
+            "contentSize": "27241",
+            "dateCreated": "2026-03-25T04:50:24.185584",
+            "dateModified": "2026-03-25T04:50:24.185584",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run08.loop"
+            },
+            "name": "experiment_enrich-metadata_run08"
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run08.stderr",
+            "@type": "File",
+            "contentSize": "4074",
+            "dateCreated": "2026-03-25T04:50:24.185584",
+            "dateModified": "2026-03-25T04:50:24.185584",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run08.loop"
+            },
+            "name": "experiment_enrich-metadata_run08"
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run08.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-25T04:50:24.185584",
+            "dateModified": "2026-03-25T04:50:24.185584",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run08.loop"
+            },
+            "name": "experiment_enrich-metadata_run08"
+        },
+        {
+            "@id": "files/hactar/enrichment_run09/",
+            "@type": "Dataset",
+            "dateCreated": "2026-03-25T05:22:29.846121",
+            "dateModified": "2026-03-25T05:22:29.846121",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run09.loop"
+            },
+            "keywords": [
+                "pos_run",
+                "upload"
+            ],
+            "name": "enrichment_run09"
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run09.loop",
+            "@type": "LoopRun",
+            "contentSize": "419",
+            "dateCreated": "2026-03-25T04:50:24.185584",
+            "dateModified": "2026-03-25T04:50:24.185584",
+            "duration": "PT69S",
+            "endTime": "2026-03-25T05:22:30.297355",
+            "keywords": [
+                "variables",
+                "loop_run"
+            ],
+            "name": "experiment_enrich-metadata_run09",
+            "resultData": [
+                {
+                    "@id": "files/hactar/enrichment_run09/"
+                }
+            ],
+            "runOfLoopedCommand": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata.file"
+            },
+            "startTime": "2026-03-25T05:21:20.349989",
+            "status": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run09.status"
+            },
+            "stderr": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run09.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run09.stdout"
+            }
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run09.stdout",
+            "@type": "File",
+            "contentSize": "27150",
+            "dateCreated": "2026-03-25T04:50:24.185584",
+            "dateModified": "2026-03-25T04:50:24.185584",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run09.loop"
+            },
+            "name": "experiment_enrich-metadata_run09"
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run09.stderr",
+            "@type": "File",
+            "contentSize": "4074",
+            "dateCreated": "2026-03-25T04:50:24.185584",
+            "dateModified": "2026-03-25T04:50:24.185584",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run09.loop"
+            },
+            "name": "experiment_enrich-metadata_run09"
+        },
+        {
+            "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run09.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-25T04:50:24.185584",
+            "dateModified": "2026-03-25T04:50:24.185584",
+            "exampleOfWork": {
+                "@id": "scripts/hactar/2026-03-25_04-50-24_185584_experiment_enrich-metadata_run09.loop"
+            },
+            "name": "experiment_enrich-metadata_run09"
+        }
+    ]
+}

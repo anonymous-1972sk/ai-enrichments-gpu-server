@@ -1,0 +1,141 @@
+{
+  "generated_at_utc": "2026-03-25T02:44:02.457600+00:00",
+  "result_folder": "/tmp/enricher/2026-03-16_19-51-26_709427",
+  "updated_entities": 314,
+  "elapsed_seconds": 120.946458,
+  "parameters": {
+    "model_profile": "gemma3_12b",
+    "model_profile_file": "/root/ai-metadata-enricher/config/model_profiles.yml",
+    "model": "gemma3:12b",
+    "ctx": 8192,
+    "temperature": 0.0,
+    "top_p": 0.9,
+    "num_predict": null,
+    "think": null,
+    "peek_chars": 100,
+    "gpu_metrics_csv": true,
+    "gpu_metrics_interval_ms": 1000,
+    "overwrite": true,
+    "force_title": true,
+    "force_description": true,
+    "force_keywords": true,
+    "seed": 42
+  },
+  "llm_usage_summary": {
+    "calls_total": 29,
+    "calls_with_usage": 29,
+    "prompt_tokens": 40147,
+    "output_tokens": 1046,
+    "prompt_eval_seconds": 66.90824,
+    "eval_seconds": 36.297035,
+    "total_seconds": 120.606102,
+    "load_seconds": 15.410401,
+    "prompt_tokens_per_second": 600.0307266428338,
+    "output_tokens_per_second": 28.81778073751655,
+    "usage_present": true
+  },
+  "input_stats": {
+    "count": 29,
+    "min_chars": 1697,
+    "max_chars": 11452,
+    "mean_chars": 4820.2,
+    "stddev_chars": 2778.3
+  },
+  "prompt_template_hash": "ed3cb5aa9c670cb0e185817bded7303d6292914bfb17164c42c6fa18490bcad4",
+  "environment": {
+    "ollama_version": "ollama version is 0.18.2",
+    "model_digest": "unknown",
+    "model_details": {
+      "family": "gemma3",
+      "parameter_size": "12.2B",
+      "quantization_level": "Q4_K_M"
+    },
+    "gpu_info": "NVIDIA GeForce GTX 1080 Ti, 580.82.07\nNVIDIA GeForce GTX 1080 Ti, 580.82.07\nNVIDIA GeForce GTX 1080 Ti, 580.82.07\nNVIDIA GeForce GTX 1080 Ti, 580.82.07"
+  },
+  "artifact_provenance": {
+    "baseline_path": "/srv/testbed/results/anonymous/default/2026-03-16_19-51-26_709427",
+    "baseline_label": "2026-03-16_19-51-26_709427_original",
+    "working_copy_path": "/tmp/enricher/2026-03-16_19-51-26_709427",
+    "enriched_label": "2026-03-16_19-51-26_709427",
+    "raw_baseline_uploaded_this_run": null,
+    "reference_label": "2026-03-16_19-51-26_709427_reference",
+    "reference_path": "/srv/testbed/results/anonymous/default/2026-03-16_19-51-26_709427_reference"
+  },
+  "gpu_metrics_summary": {
+    "status": "captured",
+    "csv_path": "/tmp/llm-enrichment-gpu-metrics.csv",
+    "interval_ms": 1000,
+    "monitor_returncode": 0,
+    "sample_count": 904,
+    "gpu_device_count": 4,
+    "device_indices": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "device_names": [
+      "NVIDIA GeForce GTX 1080 Ti"
+    ],
+    "gpu_utilization_avg_pct": 11.346,
+    "gpu_utilization_max_pct": 100.0,
+    "memory_utilization_avg_pct": 4.472,
+    "memory_utilization_max_pct": 64.0,
+    "memory_used_max_mib": 9121.0,
+    "power_draw_avg_watts": 39.97,
+    "power_draw_max_watts": 275.23,
+    "temperature_max_c": 83.0
+  },
+  "evaluation": {
+    "status": "completed",
+    "reason": null,
+    "report_json": "/tmp/enricher/bertscore_results.json",
+    "report_markdown": "/tmp/enricher/bertscore_results.md",
+    "total_references": 332,
+    "matched": 332,
+    "bertscore": {
+      "status": "computed",
+      "model": "microsoft/deberta-large-mnli",
+      "rescale_with_baseline": true,
+      "reason": null,
+      "requested_device": "auto",
+      "actual_device": "cpu",
+      "cpu_fallback_triggered": true,
+      "original_cuda_error": "CUDA error: no kernel image is available for execution on the device\nSearch for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n"
+    },
+    "aggregated": {
+      "rouge_l_f1_mean": 0.1821,
+      "rouge_l_f1_stddev": 0.2027,
+      "token_overlap_mean": 0.1572,
+      "token_overlap_stddev": 0.2092,
+      "bertscore_f1_mean": 0.3153,
+      "bertscore_f1_stddev": 0.1785,
+      "bertscore_precision_mean": 0.3238,
+      "bertscore_recall_mean": 0.3069,
+      "aggregated_by_field": {
+        "description": {
+          "count": 331,
+          "rouge_l_f1_mean": 0.1824,
+          "rouge_l_f1_stddev": 0.2029,
+          "token_overlap_mean": 0.1575,
+          "token_overlap_stddev": 0.2094,
+          "bertscore_f1_mean": 0.3152,
+          "bertscore_f1_stddev": 0.1788,
+          "bertscore_precision_mean": 0.3239,
+          "bertscore_recall_mean": 0.3067
+        },
+        "name": {
+          "count": 1,
+          "rouge_l_f1_mean": 0.1053,
+          "rouge_l_f1_stddev": 0.0,
+          "token_overlap_mean": 0.0588,
+          "token_overlap_stddev": 0.0,
+          "bertscore_f1_mean": 0.3392,
+          "bertscore_f1_stddev": 0.0,
+          "bertscore_precision_mean": 0.3194,
+          "bertscore_recall_mean": 0.355
+        }
+      }
+    }
+  }
+}

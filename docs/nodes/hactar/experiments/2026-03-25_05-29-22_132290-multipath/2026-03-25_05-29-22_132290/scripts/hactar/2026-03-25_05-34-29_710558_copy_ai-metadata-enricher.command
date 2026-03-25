@@ -1,0 +1,1 @@
+scp -r /home/anonymous/experiments/ai-metadata-enricher hactar.anonymous.testbed:/root/ai-metadata-enricher

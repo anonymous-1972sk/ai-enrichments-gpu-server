@@ -1,0 +1,229 @@
+### Updating package lists ###
+Reading package lists...
+Building dependency tree...
+Reading state information...
+git is already the newest version (1:2.39.5-0+deb12u2).
+python3-venv is already the newest version (3.11.2-1+b1).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+### Installing required packages ###
+Collecting rocrate@ git+https://github.com/ResearchObject/ro-crate-py.git@ce636014a58f24fa2d2eda05850ea0ea065f9f8c
+  Cloning https://github.com/ResearchObject/ro-crate-py.git (to revision ce636014a58f24fa2d2eda05850ea0ea065f9f8c) to /tmp/pip-install-cxabnko2/rocrate_2e7ebe53feeb479c9a4c762facc7dae2
+  Resolved https://github.com/ResearchObject/ro-crate-py.git to commit ce636014a58f24fa2d2eda05850ea0ea065f9f8c
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting ollama
+  Downloading ollama-0.6.1-py3-none-any.whl (14 kB)
+Collecting pyyaml
+  Downloading pyyaml-6.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (806 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 806.6/806.6 kB 6.2 MB/s eta 0:00:00
+Collecting httpx>=0.27
+  Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 73.5/73.5 kB 10.1 MB/s eta 0:00:00
+Collecting pydantic>=2.9
+  Downloading pydantic-2.12.5-py3-none-any.whl (463 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 463.6/463.6 kB 9.4 MB/s eta 0:00:00
+Collecting requests
+  Downloading requests-2.32.5-py3-none-any.whl (64 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 64.7/64.7 kB 12.8 MB/s eta 0:00:00
+Collecting arcp==0.2.1
+  Downloading arcp-0.2.1-py2.py3-none-any.whl (15 kB)
+Collecting jinja2
+  Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 134.9/134.9 kB 9.9 MB/s eta 0:00:00
+Collecting python-dateutil
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 229.9/229.9 kB 10.9 MB/s eta 0:00:00
+Collecting click
+  Downloading click-8.3.1-py3-none-any.whl (108 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 108.3/108.3 kB 14.2 MB/s eta 0:00:00
+Collecting anyio
+  Downloading anyio-4.13.0-py3-none-any.whl (114 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 114.4/114.4 kB 14.5 MB/s eta 0:00:00
+Collecting certifi
+  Downloading certifi-2026.2.25-py3-none-any.whl (153 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 153.7/153.7 kB 11.5 MB/s eta 0:00:00
+Collecting httpcore==1.*
+  Downloading httpcore-1.0.9-py3-none-any.whl (78 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.8/78.8 kB 8.9 MB/s eta 0:00:00
+Collecting idna
+  Downloading idna-3.11-py3-none-any.whl (71 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 71.0/71.0 kB 13.2 MB/s eta 0:00:00
+Collecting h11>=0.16
+  Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+Collecting annotated-types>=0.6.0
+  Downloading annotated_types-0.7.0-py3-none-any.whl (13 kB)
+Collecting pydantic-core==2.41.5
+  Downloading pydantic_core-2.41.5-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 14.7 MB/s eta 0:00:00
+Collecting typing-extensions>=4.14.1
+  Downloading typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 44.6/44.6 kB 47.7 MB/s eta 0:00:00
+Collecting typing-inspection>=0.4.2
+  Downloading typing_inspection-0.4.2-py3-none-any.whl (14 kB)
+Collecting MarkupSafe>=2.0
+  Downloading markupsafe-3.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (22 kB)
+Collecting six>=1.5
+  Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+Collecting charset_normalizer<4,>=2
+  Downloading charset_normalizer-3.4.6-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (204 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 204.7/204.7 kB 26.2 MB/s eta 0:00:00
+Collecting urllib3<3,>=1.21.1
+  Downloading urllib3-2.6.3-py3-none-any.whl (131 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 131.6/131.6 kB 27.2 MB/s eta 0:00:00
+Building wheels for collected packages: rocrate
+  Building wheel for rocrate (pyproject.toml): started
+  Building wheel for rocrate (pyproject.toml): finished with status 'done'
+  Created wheel for rocrate: filename=rocrate-0.14.2-py3-none-any.whl size=344726 sha256=3e443d8b13797c013e08a5cae9af805c720b5f0a78be6651b412d2955dd3d8db
+  Stored in directory: /root/.cache/pip/wheels/4d/ec/44/ba5b96b02237c31d0862b0dcbb690bc3da82ae01b6bf16ab8d
+Successfully built rocrate
+Installing collected packages: arcp, urllib3, typing-extensions, six, pyyaml, MarkupSafe, idna, h11, click, charset_normalizer, certifi, annotated-types, typing-inspection, requests, python-dateutil, pydantic-core, jinja2, httpcore, anyio, rocrate, pydantic, httpx, ollama
+Successfully installed MarkupSafe-3.0.3 annotated-types-0.7.0 anyio-4.13.0 arcp-0.2.1 certifi-2026.2.25 charset_normalizer-3.4.6 click-8.3.1 h11-0.16.0 httpcore-1.0.9 httpx-0.28.1 idna-3.11 jinja2-3.1.6 ollama-0.6.1 pydantic-2.12.5 pydantic-core-2.41.5 python-dateutil-2.9.0.post0 pyyaml-6.0.3 requests-2.32.5 rocrate-0.14.2 six-1.17.0 typing-extensions-4.15.0 typing-inspection-0.4.2 urllib3-2.6.3
+### Installing evaluation dependencies (bert-score) ###
+Collecting bert-score>=0.3.13
+  Downloading bert_score-0.3.13-py3-none-any.whl (61 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.1/61.1 kB 2.6 MB/s eta 0:00:00
+Collecting transformers<5.0,>=4.39
+  Downloading transformers-4.57.6-py3-none-any.whl (12.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.0/12.0 MB 73.1 MB/s eta 0:00:00
+Collecting torch>=1.0.0
+  Downloading torch-2.11.0-cp311-cp311-manylinux_2_28_x86_64.whl (530.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 530.6/530.6 MB 12.4 MB/s eta 0:00:00
+Collecting pandas>=1.0.1
+  Downloading pandas-3.0.1-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (11.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.3/11.3 MB 96.4 MB/s eta 0:00:00
+Collecting numpy
+  Downloading numpy-2.4.3-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.9 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.9/16.9 MB 90.3 MB/s eta 0:00:00
+Requirement already satisfied: requests in ./venv3/lib/python3.11/site-packages (from bert-score>=0.3.13) (2.32.5)
+Collecting tqdm>=4.31.1
+  Downloading tqdm-4.67.3-py3-none-any.whl (78 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.4/78.4 kB 74.3 MB/s eta 0:00:00
+Collecting matplotlib
+  Downloading matplotlib-3.10.8-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (8.7 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.7/8.7 MB 103.9 MB/s eta 0:00:00
+Collecting packaging>=20.9
+  Downloading packaging-26.0-py3-none-any.whl (74 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 74.4/74.4 kB 68.6 MB/s eta 0:00:00
+Collecting filelock
+  Downloading filelock-3.25.2-py3-none-any.whl (26 kB)
+Collecting huggingface-hub<1.0,>=0.34.0
+  Downloading huggingface_hub-0.36.2-py3-none-any.whl (566 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 566.4/566.4 kB 112.7 MB/s eta 0:00:00
+Requirement already satisfied: pyyaml>=5.1 in ./venv3/lib/python3.11/site-packages (from transformers<5.0,>=4.39) (6.0.3)
+Collecting regex!=2019.12.17
+  Downloading regex-2026.2.28-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (800 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 800.2/800.2 kB 117.7 MB/s eta 0:00:00
+Collecting tokenizers<=0.23.0,>=0.22.0
+  Downloading tokenizers-0.22.2-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 105.9 MB/s eta 0:00:00
+Collecting safetensors>=0.4.3
+  Downloading safetensors-0.7.0-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (507 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 507.2/507.2 kB 115.7 MB/s eta 0:00:00
+Collecting fsspec>=2023.5.0
+  Downloading fsspec-2026.2.0-py3-none-any.whl (202 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 202.5/202.5 kB 121.4 MB/s eta 0:00:00
+Collecting hf-xet<2.0.0,>=1.1.3
+  Downloading hf_xet-1.4.2-cp37-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (4.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.2/4.2 MB 104.1 MB/s eta 0:00:00
+Requirement already satisfied: typing-extensions>=3.7.4.3 in ./venv3/lib/python3.11/site-packages (from huggingface-hub<1.0,>=0.34.0->transformers<5.0,>=4.39) (4.15.0)
+Requirement already satisfied: python-dateutil>=2.8.2 in ./venv3/lib/python3.11/site-packages (from pandas>=1.0.1->bert-score>=0.3.13) (2.9.0.post0)
+Requirement already satisfied: setuptools<82 in ./venv3/lib/python3.11/site-packages (from torch>=1.0.0->bert-score>=0.3.13) (66.1.1)
+Collecting sympy>=1.13.3
+  Downloading sympy-1.14.0-py3-none-any.whl (6.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.3/6.3 MB 106.5 MB/s eta 0:00:00
+Collecting networkx>=2.5.1
+  Downloading networkx-3.6.1-py3-none-any.whl (2.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 108.1 MB/s eta 0:00:00
+Requirement already satisfied: jinja2 in ./venv3/lib/python3.11/site-packages (from torch>=1.0.0->bert-score>=0.3.13) (3.1.6)
+Collecting cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2
+  Downloading cuda_toolkit-13.0.2-py2.py3-none-any.whl (2.4 kB)
+Collecting cuda-bindings<14,>=13.0.3
+  Downloading cuda_bindings-13.2.0-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (6.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.3/6.3 MB 107.0 MB/s eta 0:00:00
+Collecting nvidia-cudnn-cu13==9.19.0.56
+  Downloading nvidia_cudnn_cu13-9.19.0.56-py3-none-manylinux_2_27_x86_64.whl (366.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 366.1/366.1 MB 17.1 MB/s eta 0:00:00
+Collecting nvidia-cusparselt-cu13==0.8.0
+  Downloading nvidia_cusparselt_cu13-0.8.0-py3-none-manylinux2014_x86_64.whl (169.9 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 169.9/169.9 MB 31.2 MB/s eta 0:00:00
+Collecting nvidia-nccl-cu13==2.28.9
+  Downloading nvidia_nccl_cu13-2.28.9-py3-none-manylinux_2_18_x86_64.whl (196.5 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 196.5/196.5 MB 23.8 MB/s eta 0:00:00
+Collecting nvidia-nvshmem-cu13==3.4.5
+  Downloading nvidia_nvshmem_cu13-3.4.5-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (60.4 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 60.4/60.4 MB 58.1 MB/s eta 0:00:00
+Collecting triton==3.6.0
+  Downloading triton-3.6.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (188.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 188.2/188.2 MB 29.1 MB/s eta 0:00:00
+Collecting nvidia-cublas==13.1.0.3.*
+  Downloading nvidia_cublas-13.1.0.3-py3-none-manylinux_2_27_x86_64.whl (423.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 423.1/423.1 MB 15.1 MB/s eta 0:00:00
+Collecting nvidia-cuda-runtime==13.0.96.*
+  Downloading nvidia_cuda_runtime-13.0.96-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (2.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.2/2.2 MB 104.7 MB/s eta 0:00:00
+Collecting nvidia-cufft==12.0.0.61.*
+  Downloading nvidia_cufft-12.0.0.61-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (214.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 214.1/214.1 MB 26.0 MB/s eta 0:00:00
+Collecting nvidia-cufile==1.15.1.6.*
+  Downloading nvidia_cufile-1.15.1.6-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (1.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 108.3 MB/s eta 0:00:00
+Collecting nvidia-cuda-cupti==13.0.85.*
+  Downloading nvidia_cuda_cupti-13.0.85-py3-none-manylinux_2_25_x86_64.whl (10.7 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.7/10.7 MB 93.2 MB/s eta 0:00:00
+Collecting nvidia-curand==10.4.0.35.*
+  Downloading nvidia_curand-10.4.0.35-py3-none-manylinux_2_27_x86_64.whl (59.5 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 59.5/59.5 MB 49.2 MB/s eta 0:00:00
+Collecting nvidia-cusolver==12.0.4.66.*
+  Downloading nvidia_cusolver-12.0.4.66-py3-none-manylinux_2_27_x86_64.whl (200.9 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 200.9/200.9 MB 27.7 MB/s eta 0:00:00
+Collecting nvidia-cusparse==12.6.3.3.*
+  Downloading nvidia_cusparse-12.6.3.3-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (145.9 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 145.9/145.9 MB 34.6 MB/s eta 0:00:00
+Collecting nvidia-nvjitlink==13.0.88.*
+  Downloading nvidia_nvjitlink-13.0.88-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl (40.7 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 40.7/40.7 MB 69.3 MB/s eta 0:00:00
+Collecting nvidia-cuda-nvrtc==13.0.88.*
+  Downloading nvidia_cuda_nvrtc-13.0.88-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl (90.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 90.2/90.2 MB 47.1 MB/s eta 0:00:00
+Collecting nvidia-nvtx==13.0.85.*
+  Downloading nvidia_nvtx-13.0.85-py3-none-manylinux1_x86_64.manylinux_2_5_x86_64.whl (148 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 148.0/148.0 kB 110.9 MB/s eta 0:00:00
+Collecting contourpy>=1.0.1
+  Downloading contourpy-1.3.3-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (355 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 355.2/355.2 kB 120.2 MB/s eta 0:00:00
+Collecting cycler>=0.10
+  Downloading cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Collecting fonttools>=4.22.0
+  Downloading fonttools-4.62.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (5.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.1/5.1 MB 93.1 MB/s eta 0:00:00
+Collecting kiwisolver>=1.3.1
+  Downloading kiwisolver-1.5.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (1.4 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 88.6 MB/s eta 0:00:00
+Collecting pillow>=8
+  Downloading pillow-12.1.1-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (7.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.0/7.0 MB 91.9 MB/s eta 0:00:00
+Collecting pyparsing>=3
+  Downloading pyparsing-3.3.2-py3-none-any.whl (122 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 122.8/122.8 kB 104.5 MB/s eta 0:00:00
+Requirement already satisfied: charset_normalizer<4,>=2 in ./venv3/lib/python3.11/site-packages (from requests->bert-score>=0.3.13) (3.4.6)
+Requirement already satisfied: idna<4,>=2.5 in ./venv3/lib/python3.11/site-packages (from requests->bert-score>=0.3.13) (3.11)
+Requirement already satisfied: urllib3<3,>=1.21.1 in ./venv3/lib/python3.11/site-packages (from requests->bert-score>=0.3.13) (2.6.3)
+Requirement already satisfied: certifi>=2017.4.17 in ./venv3/lib/python3.11/site-packages (from requests->bert-score>=0.3.13) (2026.2.25)
+Collecting cuda-pathfinder~=1.1
+  Downloading cuda_pathfinder-1.5.0-py3-none-any.whl (49 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 49.7/49.7 kB 53.5 MB/s eta 0:00:00
+Requirement already satisfied: six>=1.5 in ./venv3/lib/python3.11/site-packages (from python-dateutil>=2.8.2->pandas>=1.0.1->bert-score>=0.3.13) (1.17.0)
+Collecting mpmath<1.4,>=1.1.0
+  Downloading mpmath-1.3.0-py3-none-any.whl (536 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 536.2/536.2 kB 113.6 MB/s eta 0:00:00
+Requirement already satisfied: MarkupSafe>=2.0 in ./venv3/lib/python3.11/site-packages (from jinja2->torch>=1.0.0->bert-score>=0.3.13) (3.0.3)
+Installing collected packages: nvidia-cusparselt-cu13, mpmath, cuda-toolkit, triton, tqdm, sympy, safetensors, regex, pyparsing, pillow, packaging, nvidia-nvtx, nvidia-nvshmem-cu13, nvidia-nvjitlink, nvidia-nccl-cu13, nvidia-curand, nvidia-cufile, nvidia-cuda-runtime, nvidia-cuda-nvrtc, nvidia-cuda-cupti, nvidia-cublas, numpy, networkx, kiwisolver, hf-xet, fsspec, fonttools, filelock, cycler, cuda-pathfinder, pandas, nvidia-cusparse, nvidia-cufft, nvidia-cudnn-cu13, huggingface-hub, cuda-bindings, contourpy, tokenizers, nvidia-cusolver, matplotlib, transformers, torch, bert-score
+Successfully installed bert-score-0.3.13 contourpy-1.3.3 cuda-bindings-13.2.0 cuda-pathfinder-1.5.0 cuda-toolkit-13.0.2 cycler-0.12.1 filelock-3.25.2 fonttools-4.62.1 fsspec-2026.2.0 hf-xet-1.4.2 huggingface-hub-0.36.2 kiwisolver-1.5.0 matplotlib-3.10.8 mpmath-1.3.0 networkx-3.6.1 numpy-2.4.3 nvidia-cublas-13.1.0.3 nvidia-cuda-cupti-13.0.85 nvidia-cuda-nvrtc-13.0.88 nvidia-cuda-runtime-13.0.96 nvidia-cudnn-cu13-9.19.0.56 nvidia-cufft-12.0.0.61 nvidia-cufile-1.15.1.6 nvidia-curand-10.4.0.35 nvidia-cusolver-12.0.4.66 nvidia-cusparse-12.6.3.3 nvidia-cusparselt-cu13-0.8.0 nvidia-nccl-cu13-2.28.9 nvidia-nvjitlink-13.0.88 nvidia-nvshmem-cu13-3.4.5 nvidia-nvtx-13.0.85 packaging-26.0 pandas-3.0.1 pillow-12.1.1 pyparsing-3.3.2 regex-2026.2.28 safetensors-0.7.0 sympy-1.14.0 tokenizers-0.22.2 torch-2.11.0 tqdm-4.67.3 transformers-4.57.6 triton-3.6.0
+### Checking Ollama installation ###
+Ollama not found. Installing now...
+### Verifying Ollama installation ###
+Ollama installed successfully.
